@@ -1,16 +1,14 @@
-# kanjidic-reader
+# ctor-cli
 
-Script that reads files in KANJIDIC format.
+Build a command line app from a constructor.
 
 ## Why?
 
-I need to parse files that are in [KANJIDIC](http://www.csse.monash.edu.au/~jwb/kanjidic_doc.html) format for my Japanese dictionary app, so I made one in Node.js.
-
-On top of `kanjidic-reader`, I have created [`kanjidic-database-importer`](https://github.com/Temoto-kun/kanjidic-database-importer) for importing parsed KANJIDIC data to a database, and [`kanjidic-exporter`](https://github.com/Temoto-kun/kanjidic-exporter) for producing output from parsed KANJIDIC data.
+It's a hassle to create Node.js CLIs from scratch. Also, I realized CLI commands are functions in themselves that you pass arguments in it to perform set(s) of instructions.
 
 ## Notes
 
-The source files in the KANJIDIC home page are EUC-JP encoded and gzipped, while `kanjidic-reader` operates with UTF-8 files. I will try to detect encodings in the future.
+This is an experimental work. I'm not yet sure if this is secure enough, since it attempts to parse the function (using `doctrine` and [`esprima`](https://github.com/jquery/esprima)). However, it only reads arguments and JSDoc annotations (which by the way I overloaded it to accommodate the CLI arguments, so `@arg` does different here now). Let me know if it raises concerns or you might want to suggest features to be (re)written.
 
 ## Contribution
 
@@ -20,4 +18,4 @@ Please star the repo if you find it useful in your projects.
 
 ## License
 
-MIT. See [LICENSE file](https://raw.githubusercontent.com/Temoto-kun/kanjidic-reader/master/LICENSE) for details.
+MIT. See [LICENSE file](https://raw.githubusercontent.com/Temoto-kun/ctor-cli/master/LICENSE) for details.
