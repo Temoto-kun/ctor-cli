@@ -1,0 +1,41 @@
+{
+  "name": "@theoryofnekomata/ctor-cli",
+  "version": "0.0.1",
+  "description": "Builds a command-line app from a constructor.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Temoto-kun/ctor-cli.git"
+  },
+  "keywords": [
+    "dictionary",
+    "KANJIDIC",
+    "Japanese",
+    "Nihongo",
+    "Nippongo",
+    "language"
+  ],
+  "author": "TheoryOfNekomata <allan.crisostomo@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Temoto-kun/ctor-cli/issues"
+  },
+  "homepage": "https://github.com/Temoto-kun/ctor-cli#readme",
+  "devDependencies": {
+    "jasmine": "^2.4.1",
+    "jasmine-spec-reporter": "^2.5.0"
+  },
+  "scripts": {
+    "test": "eslint --env jasmine,node spec/**/*.js && node test.js",
+    "lint": "eslint --env es6,node src/**/*.js"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": "@theoryofnekomata/eslint-config-q3-2016"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "doctrine": "^1.4.0",
+    "esprima": "^3.0.0"
+  }
+}
