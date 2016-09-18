@@ -2,7 +2,7 @@
   "name": "@theoryofnekomata/ctor-cli",
   "version": "0.0.1",
   "description": "Builds a command-line app from a constructor.",
-  "main": "index.js",
+  "main": "src/cli.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Temoto-kun/ctor-cli.git"
